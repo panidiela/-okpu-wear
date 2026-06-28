@@ -42,9 +42,9 @@ export default function Footer() {
             <Image
               src="/logo/logo-header-gold.svg"
               alt="Ọkpụ"
-              width={160}
-              height={56}
-              className="w-[120px] md:w-[150px] h-auto"
+              width={200}
+              height={60}
+              className="h-[50px] md:h-[58px] w-auto"
             />
             <p className="mt-4 text-[#B7B2A9] text-sm leading-relaxed max-w-xs font-[family-name:var(--font-inter)]">
               Art africain contemporain. Chaque pièce est unique, fabriquée à la main.
