@@ -3,8 +3,6 @@ import Image from "next/image";
 import type { Product } from "@/data/products";
 
 export default function ProductCard({ product }: { product: Product }) {
-  const price = new Intl.NumberFormat("fr-FR").format(product.price);
-
   return (
     <Link
       href={`/produit/${product.id}`}
@@ -21,9 +19,9 @@ export default function ProductCard({ product }: { product: Product }) {
             sizes="(max-width: 768px) 50vw, 33vw"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <span className="font-[family-name:var(--font-cormorant)] text-[#B7B2A9] text-sm italic">
-              Photo à venir
+          <div className="w-full h-full flex items-center justify-center px-4 text-center">
+            <span className="font-[family-name:var(--font-cormorant)] text-[#B7B2A9] text-sm italic leading-relaxed">
+              {product.name}
             </span>
           </div>
         )}
@@ -31,12 +29,20 @@ export default function ProductCard({ product }: { product: Product }) {
 
       {/* Info */}
       <div className="p-4 border-t border-[#E8E4DD]">
-        <p className="font-[family-name:var(--font-cormorant)] text-base font-light text-[#0B0B0B] leading-tight">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-[#B7B2A9] mb-1.5 font-[family-name:var(--font-inter)]">
+          {product.collection}
+        </p>
+        <p className="font-[family-name:var(--font-cormorant)] text-lg font-light text-[#0B0B0B] leading-tight mb-3">
           {product.name}
         </p>
-        <p className="mt-1 font-[family-name:var(--font-inter)] text-xs text-[#B7B2A9] tracking-[0.06em]">
-          {price} FCFA
-        </p>
+        <div className="flex items-center justify-between">
+          <p className="font-[family-name:var(--font-inter)] text-xs text-[#B7B2A9]">
+            {product.price} {product.currency}
+          </p>
+          <span className="text-[10px] uppercase tracking-[0.14em] text-[#C9A45C] font-[family-name:var(--font-inter)] group-hover:text-[#0B0B0B] transition-colors duration-300">
+            Découvrir →
+          </span>
+        </div>
       </div>
     </Link>
   );

@@ -9,15 +9,12 @@ import { ButtonLink } from "@/components/ui/Button";
 const WHATSAPP_NUMBER = "22901000000";
 
 export default function HomePage() {
-  const featured = products.slice(0, 3);
+  const featured = products.slice(0, 4);
 
   return (
     <>
-      {/* ── HERO ───────────────────────────────────────────── */}
-      <section
-        className="relative min-h-[90vh] flex flex-col items-center justify-center text-center bg-[#0B0B0B] text-[#F7F4EE] px-5 overflow-hidden"
-      >
-        {/* Motif fond */}
+      {/* ── HERO ─────────────────────────────────────────── */}
+      <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center bg-[#0B0B0B] text-[#F7F4EE] px-5 overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -28,28 +25,23 @@ export default function HomePage() {
           }}
           aria-hidden
         />
-
-        {/* Ligne décorative or */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-transparent to-[#C9A45C]" aria-hidden />
 
         <div className="relative z-10 flex flex-col items-center gap-6 animate-[fade-up_0.9s_ease_forwards]">
-          <p className="text-xs uppercase tracking-[0.3em] text-[#C9A45C] font-[family-name:var(--font-inter)]">
-            Art africain contemporain
+          <p className="text-[10px] uppercase tracking-[0.35em] text-[#C9A45C] font-[family-name:var(--font-inter)]">
+            Collection 001 — ORIGINES
           </p>
-
           <h1 className="font-[family-name:var(--font-cormorant)] text-[clamp(5rem,18vw,10rem)] font-light leading-none tracking-[-0.02em]">
             Ọkpụ
           </h1>
-
           <p className="font-[family-name:var(--font-inter)] text-[#B7B2A9] text-sm leading-relaxed max-w-xs">
-            Des bonnets uniques, tricotés à la main,<br />
-            nés du patrimoine africain.
+            Dix œuvres portables.<br />
+            Chacune raconte quelque chose que les mots ne suffisent pas à dire.
           </p>
-
           <div className="flex flex-col sm:flex-row gap-3 mt-4">
             <ButtonLink href="/collection" variant="secondary"
               className="border-[#F7F4EE] text-[#F7F4EE] hover:bg-[#F7F4EE] hover:text-[#0B0B0B]">
-              Voir la collection
+              Découvrir les œuvres
             </ButtonLink>
             <ButtonLink
               href={`https://wa.me/${WHATSAPP_NUMBER}`}
@@ -63,26 +55,24 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Ligne bas */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-px h-16 bg-gradient-to-t from-transparent to-[#C9A45C]" aria-hidden />
       </section>
 
-      {/* ── PRODUITS VEDETTES ──────────────────────────────── */}
+      {/* ── SÉLECTION ────────────────────────────────────── */}
       <Section pattern>
         <Container>
           <div className="flex items-end justify-between mb-12 gap-4">
-            <Heading as="h2" eyebrow="Sélection">
-              Nos pièces
+            <Heading as="h2" eyebrow="Collection ORIGINES">
+              Les œuvres
             </Heading>
             <Link
               href="/collection"
-              className="text-xs uppercase tracking-[0.16em] text-[#B7B2A9] hover:text-[#0B0B0B] transition-colors duration-300 font-[family-name:var(--font-inter)] whitespace-nowrap"
+              className="text-[10px] uppercase tracking-[0.2em] text-[#B7B2A9] hover:text-[#0B0B0B] transition-colors duration-300 font-[family-name:var(--font-inter)] whitespace-nowrap"
             >
-              Tout voir →
+              Voir les 10 →
             </Link>
           </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
             {featured.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
@@ -90,22 +80,22 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* ── MARQUE ─────────────────────────────────────────── */}
+      {/* ── MANIFESTE ────────────────────────────────────── */}
       <Section dark pattern>
         <Container narrow>
           <div className="text-center">
-            <Heading as="h2" eyebrow="Notre histoire" gold>
-              Ọkpụ, c&apos;est quoi ?
+            <Heading as="h2" eyebrow="Notre approche" gold>
+              Des œuvres, pas des T-shirts.
             </Heading>
             <p className="mt-6 text-[#B7B2A9] font-[family-name:var(--font-inter)] text-sm leading-relaxed">
-              Ọkpụ signifie <em className="text-[#F7F4EE] not-italic font-light font-[family-name:var(--font-cormorant)] text-base">bonnet</em> en
-              igbo. Une marque née de la fierté culturelle africaine et du désir de créer des pièces ancrées dans
-              une identité forte.
+              Ọkpụ crée des pièces qui portent une histoire, une intention, une mémoire.
+              Chaque bonnet de la collection ORIGINES est pensé comme une œuvre d&apos;art portée —
+              ancrée dans le patrimoine africain, faite pour aujourd&apos;hui.
             </p>
             <div className="mt-10">
               <ButtonLink href="/a-propos" variant="secondary"
                 className="border-[#F7F4EE] text-[#F7F4EE] hover:bg-[#F7F4EE] hover:text-[#0B0B0B]">
-                En savoir plus
+                Notre histoire
               </ButtonLink>
             </div>
           </div>

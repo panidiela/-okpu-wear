@@ -1,18 +1,18 @@
-import { products } from "@/data/products";
+import { products, collections } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { Heading } from "@/components/ui/Heading";
 
 export const metadata = {
-  title: "Collection — Ọkpụ Wear",
-  description: "Découvrez tous les bonnets et accessoires Ọkpụ.",
+  title: "Collection ORIGINES — Ọkpụ Wear",
+  description: "10 œuvres portables. Une collection inspirée du patrimoine africain.",
 };
 
 export default function CollectionPage() {
   return (
     <>
-      {/* Header page */}
+      {/* Header */}
       <section className="bg-[#0B0B0B] text-[#F7F4EE] py-20 md:py-28 text-center relative overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none"
@@ -25,23 +25,35 @@ export default function CollectionPage() {
           aria-hidden
         />
         <div className="relative z-10">
-          <Heading as="h1" eyebrow="Ọkpụ Wear">
-            <span className="text-[#F7F4EE]">Collection</span>
+          <Heading as="h1" eyebrow={`Collection 001 · ${products.length} œuvres`}>
+            <span className="text-[#F7F4EE]">ORIGINES</span>
           </Heading>
+          <p className="mt-6 font-[family-name:var(--font-inter)] text-sm text-[#B7B2A9] max-w-sm mx-auto leading-relaxed">
+            Des pièces qui portent une histoire. Chaque bonnet est une œuvre — portez-en le sens.
+          </p>
         </div>
       </section>
 
       {/* Grille */}
       <Section pattern>
         <Container>
-          <p className="font-[family-name:var(--font-inter)] text-xs text-[#B7B2A9] tracking-[0.1em] mb-10">
-            {products.length} pièce{products.length > 1 ? "s" : ""}
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          {collections.map((col) => (
+            <div key={col}>
+              <div className="flex items-center gap-4 mb-10">
+                <span className="text-[10px] uppercase tracking-[0.25em] text-[#B7B2A9] font-[family-name:var(--font-inter)]">
+                  {col}
+                </span>
+                <div className="flex-1 h-px bg-[#E8E4DD]" />
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
+                {products
+                  .filter((p) => p.collection === col)
+                  .map((product) => (
+                    <ProductCard key={product.id} product={product} />
+                  ))}
+              </div>
+            </div>
+          ))}
         </Container>
       </Section>
     </>
