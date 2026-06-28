@@ -13,13 +13,14 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" aria-label="Ọkpụ Wear — retour à l'accueil" className="flex items-center">
-          {/* Logo image — remplacer le src quand le fichier est prêt */}
-          {/* <Image src="/logo/logo-header.svg" alt="Ọkpụ" width={120} height={40} className="h-9 md:h-10 w-auto" priority /> */}
-
-          {/* Fallback texte — actif jusqu'à l'intégration du fichier logo */}
-          <span className="font-[family-name:var(--font-cormorant)] text-2xl font-light tracking-[0.08em] text-[#0B0B0B] hover:opacity-70 transition-opacity duration-300">
-            Ọkpụ
-          </span>
+          <Image
+            src="/logo/logo-header.svg"
+            alt="Ọkpụ"
+            width={120}
+            height={40}
+            className="h-9 md:h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
