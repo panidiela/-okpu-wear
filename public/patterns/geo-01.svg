@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <!-- Motif kente simplifié — losanges et lignes -->
+  <rect width="60" height="60" fill="none"/>
+  <!-- Losange central -->
+  <polygon points="30,8 52,30 30,52 8,30" fill="none" stroke="#0B0B0B" stroke-width="0.8"/>
+  <!-- Losange intérieur -->
+  <polygon points="30,18 42,30 30,42 18,30" fill="none" stroke="#0B0B0B" stroke-width="0.5"/>
+  <!-- Croix centrale -->
+  <line x1="30" y1="8"  x2="30" y2="52" stroke="#0B0B0B" stroke-width="0.4"/>
+  <line x1="8"  y1="30" x2="52" y2="30" stroke="#0B0B0B" stroke-width="0.4"/>
+  <!-- Points aux coins -->
+  <circle cx="30" cy="8"  r="1" fill="#0B0B0B"/>
+  <circle cx="30" cy="52" r="1" fill="#0B0B0B"/>
+  <circle cx="8"  cy="30" r="1" fill="#0B0B0B"/>
+  <circle cx="52" cy="30" r="1" fill="#0B0B0B"/>
+</svg>
