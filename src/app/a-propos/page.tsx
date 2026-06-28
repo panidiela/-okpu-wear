@@ -35,28 +35,43 @@ export default function AboutPage() {
         <Container narrow>
           <div className="space-y-8 font-[family-name:var(--font-inter)] text-sm text-[#B7B2A9] leading-relaxed">
             <p>
-              <span className="font-[family-name:var(--font-cormorant)] text-[#0B0B0B] text-xl not-italic">
-                Ọkpụ
-              </span>{" "}
-              — prononcé <em>okpu</em> — signifie{" "}
-              <span className="font-[family-name:var(--font-cormorant)] text-[#0B0B0B] text-lg italic">bonnet</span>{" "}
-              en igbo, une langue parlée principalement au Nigeria. Ce mot simple porte en lui une richesse
-              culturelle immense.
+              <span className="font-[family-name:var(--font-cormorant)] text-[#0B0B0B] text-xl not-italic">Ọkpụ</span>
+              {" "}— prononcé <em>Okpu</em> — est inspiré d&apos;un mot de la langue igbo évoquant{" "}
+              <span className="font-[family-name:var(--font-cormorant)] text-[#0B0B0B] text-lg italic">le sculpteur</span>,
+              celui qui révèle une œuvre en donnant forme à la matière.
             </p>
 
             <p>
-              La marque est née d&apos;un désir de créer des pièces qui honorent le patrimoine africain tout en
-              s&apos;inscrivant dans une esthétique contemporaine. Chaque bonnet est pensé comme une œuvre à part
-              entière — une rencontre entre la tradition et le streetwear d&apos;aujourd&apos;hui.
+              Cette idée est au cœur de notre marque.
             </p>
 
             <p>
-              Ici, pas de production de masse. Chaque pièce est fabriquée avec soin, en quantités limitées,
-              pour garantir une qualité irréprochable et préserver l&apos;unicité de chaque création.
+              Comme le sculpteur façonne le bois ou la pierre, nous façonnons des histoires, des émotions
+              et des fragments de la culture africaine pour leur donner une nouvelle vie à travers l&apos;art
+              contemporain.
             </p>
 
             <p>
-              Porter un bonnet Ọkpụ, c&apos;est choisir de porter une histoire — et de la réécrire à ta façon.
+              Chaque création est pensée comme une œuvre à part entière. Inspirée par les traditions, les
+              visages, les savoir-faire et les scènes de vie du continent africain, elle est réinterprétée
+              avec une sensibilité moderne afin de créer des pièces intemporelles.
+            </p>
+
+            <p className="font-[family-name:var(--font-cormorant)] text-[#0B0B0B] text-xl leading-snug">
+              Nous ne créons pas simplement des vêtements.<br />
+              Nous créons des œuvres que l&apos;on porte.
+            </p>
+
+            <p>
+              Chaque illustration est réalisée avec exigence, produite en quantité limitée et imprimée
+              avec le plus grand soin afin de préserver sa qualité, son caractère et son authenticité.
+            </p>
+
+            <p>
+              Porter une création{" "}
+              <span className="font-[family-name:var(--font-cormorant)] text-[#0B0B0B] text-base not-italic">Ọkpụ</span>,
+              c&apos;est porter une histoire, célébrer une culture et faire vivre un fragment de l&apos;Afrique
+              contemporaine.
             </p>
           </div>
 
