@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { products } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import { Section } from "@/components/ui/Section";
@@ -31,9 +32,14 @@ export default function HomePage() {
           <p className="text-[10px] uppercase tracking-[0.35em] text-[#C9A45C] font-[family-name:var(--font-inter)]">
             Collection 001 — ORIGINES
           </p>
-          <h1 className="font-[family-name:var(--font-cormorant)] text-[clamp(5rem,18vw,10rem)] font-light leading-none tracking-[-0.02em]">
-            Ọkpụ
-          </h1>
+          <Image
+            src="/logo/logo-hero.svg"
+            alt="Ọkpụ"
+            width={400}
+            height={220}
+            className="w-auto h-[110px] sm:h-[160px] md:h-[200px] lg:h-[220px]"
+            priority
+          />
           <p className="font-[family-name:var(--font-inter)] text-[#B7B2A9] text-sm leading-relaxed max-w-xs">
             Dix œuvres portables.<br />
             Chacune raconte quelque chose que les mots ne suffisent pas à dire.
