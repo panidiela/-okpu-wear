@@ -1,13 +1,12 @@
-import { Logo } from "@/components/ui/Logo";
+import Image from "next/image";
 
 const WHATSAPP_NUMBER = "22901000000";
 
 export default function Footer() {
   return (
-    <footer
-      className="relative bg-[#0B0B0B] text-[#F7F4EE] overflow-hidden"
-    >
-      {/* Motif de fond */}
+    <footer className="relative bg-[#0B0B0B] text-[#F7F4EE] overflow-hidden">
+
+      {/* Motif fond global discret */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -19,16 +18,40 @@ export default function Footer() {
         aria-hidden
       />
 
+      {/* Motif décoratif or en bas */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
+        style={{
+          backgroundImage: "url(/patterns/geo-02.svg)",
+          backgroundRepeat: "repeat-x",
+          backgroundSize: "80px 80px",
+          backgroundPosition: "center bottom",
+          opacity: 0.10,
+          filter: "sepia(1) saturate(3) hue-rotate(5deg) brightness(1.2)",
+        }}
+        aria-hidden
+      />
+
       <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8">
+
         {/* Top */}
         <div className="py-16 md:py-20 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+          {/* Colonne logo */}
           <div className="md:col-span-1">
-            <Logo variant="light" size="lg" />
+            <Image
+              src="/logo/logo-header.svg"
+              alt="Ọkpụ"
+              width={160}
+              height={56}
+              className="w-[120px] md:w-[150px] h-auto"
+            />
             <p className="mt-4 text-[#B7B2A9] text-sm leading-relaxed max-w-xs font-[family-name:var(--font-inter)]">
               Art africain contemporain. Chaque pièce est unique, fabriquée à la main.
             </p>
           </div>
 
+          {/* Navigation */}
           <div className="md:col-span-1">
             <p className="text-xs uppercase tracking-[0.2em] text-[#B7B2A9] mb-6 font-[family-name:var(--font-inter)]">
               Navigation
@@ -43,6 +66,7 @@ export default function Footer() {
             </nav>
           </div>
 
+          {/* Commander */}
           <div className="md:col-span-1">
             <p className="text-xs uppercase tracking-[0.2em] text-[#B7B2A9] mb-6 font-[family-name:var(--font-inter)]">
               Commander
