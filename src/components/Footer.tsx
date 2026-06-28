@@ -40,7 +40,7 @@ export default function Footer() {
           {/* Colonne logo */}
           <div className="md:col-span-1">
             <Image
-              src="/logo/logo-header gold.svg"
+              src="/logo/logo-header-gold.svg"
               alt="Ọkpụ"
               width={160}
               height={56}

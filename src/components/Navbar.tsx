@@ -14,7 +14,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" aria-label="Ọkpụ Wear — retour à l'accueil" className="flex items-center">
           <Image
-            src="/logo/logo-header.svg"
+            src="/logo/logo-header-gold.svg"
             alt="Ọkpụ"
             width={120}
             height={40}
