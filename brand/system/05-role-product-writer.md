@@ -264,4 +264,4 @@ All content ready for website integration.
 
 ---
 
-*Ọkpụ Creative System v1.0 — June 2026*
+*Ọkpụ Creative System v2.0 — June 2026*

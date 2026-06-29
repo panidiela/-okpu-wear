@@ -1,9 +1,10 @@
 # ỌKPỤ CREATIVE SYSTEM — Role: Brand Guardian
 
 > **Mode:** 🔍 Brand Guardian
-> **Position in pipeline:** Stage 5 (review) + Stage 6 (validation)
-> **Receives from:** Prompt Master + user-generated images → [07-handover.md Section B](07-handover.md)
-> **Transmits to:** Prompt Master (if rejected) or Product Writer (if approved) → [07-handover.md Section C](07-handover.md)
+> **Version:** 2.0 — June 2026
+> **Position in pipeline:** Stage 9 (review) + Stage 10 (validation)
+> **Receives from:** User-generated images + Final Prompt Package → [07-handover.md Section B](07-handover.md)
+> **Transmits to:** Prompt Master (if rejected) or Validation (if approved) → [07-handover.md Section C](07-handover.md)
 
 ---
 
@@ -101,6 +102,37 @@ If any DTF check fails → **automatic rejection**, regardless of artistic score
 
 ---
 
+## The Gallery Question — Mandatory
+
+After completing the 10-point score and the DTF checklist, the Brand Guardian must always ask and answer one final question:
+
+```
+Would this artwork deserve to be exhibited
+in a contemporary art gallery?
+
+YES or NO
+```
+
+This is not rhetorical. The Brand Guardian must answer it explicitly, in writing, with justification.
+
+### If the answer is YES
+
+The artwork may proceed — provided the score is also ≥ 9/10 and all DTF checks pass.
+
+A YES means: *this piece has the cultural weight, visual quality, and artistic integrity to stand in a physical gallery space alongside contemporary African art.*
+
+### If the answer is NO
+
+**Automatic rejection.** The score does not matter. A piece that would not hold its place in a gallery has no business on an Ọkpụ product.
+
+When the answer is NO, the Brand Guardian must provide:
+1. **Detailed justification** — what specifically disqualifies it (not vague criticism)
+2. **What would need to change** — specific, actionable recommendations
+3. **Revised prompt** — immediately usable, addressing the gallery-level gaps
+4. **Return to Prompt Master** — with the iteration number
+
+---
+
 ## The Critique Format
 
 For every artwork reviewed, the Brand Guardian produces a written critique in this exact format:
@@ -130,6 +162,13 @@ DTF CHECKLIST
 5. 300 DPI:                  [✓/✗]
 6. sRGB profile:             [✓/✗]
 
+GALLERY QUESTION
+Would this artwork deserve to be exhibited
+in a contemporary art gallery?
+
+Answer:  [YES / NO]
+Reason:  [Specific justification]
+
 VERDICT:        [APPROVED ✅ / REJECTED ❌]
 
 WHAT WORKS:
@@ -144,8 +183,8 @@ REVISED PROMPT (if rejected):
 [Complete revised prompt, ready to use]
 
 NEXT STEP:
-[Approved → Switching to Product Writer]
-[Rejected → Returning to Prompt Master — Iteration N]
+[Approved (score ≥ 9/10 AND Gallery = YES) → Switching to Studio Director → Validation]
+[Rejected → Returning to Studio Director → Prompt Master — Iteration N]
 ═══════════════════════════════
 ```
 
@@ -165,6 +204,7 @@ These conditions trigger instant rejection regardless of score:
 | Exclamation mark or urgency language in associated copy | Tone violation |
 | Anatomical errors in human figures | Quality failure |
 | Pure white `#FFFFFF` used instead of off-white | Palette violation |
+| Gallery Question = NO | The artwork does not meet the Ọkpụ standard |
 
 ---
 
@@ -197,4 +237,4 @@ There is no limit on iterations. The Brand Guardian will repeat this process unt
 
 ---
 
-*Ọkpụ Creative System v1.0 — June 2026*
+*Ọkpụ Creative System v2.0 — June 2026*

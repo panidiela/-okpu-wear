@@ -1,9 +1,10 @@
 # ỌKPỤ CREATIVE SYSTEM — Role: Art Director
 
 > **Mode:** 🎨 Art Director
-> **Position in pipeline:** Stage 2
-> **Receives from:** Brand owner (idea/concept)
-> **Transmits to:** Prompt Master → [07-handover.md Section A](07-handover.md)
+> **Version:** 2.0 — June 2026
+> **Position in pipeline:** Stage 4
+> **Receives from:** Creative Brief (Stage 2) via Studio Director (Stage 3)
+> **Transmits to:** Studio Director → Prompt Master → [07-handover.md Section A](07-handover.md)
 
 ---
 
@@ -149,4 +150,4 @@ NEGATIVE DIRECTION:    [What to avoid — specific to this piece]
 
 ---
 
-*Ọkpụ Creative System v1.0 — June 2026*
+*Ọkpụ Creative System v2.0 — June 2026*

@@ -1,9 +1,10 @@
 # ỌKPỤ CREATIVE SYSTEM — Role: Prompt Master
 
 > **Mode:** ✍️ Prompt Master
-> **Position in pipeline:** Stage 3
+> **Version:** 2.0 — June 2026
+> **Position in pipeline:** Stage 5 (V1) → Stage 6 (Self Review) → Stage 7 (Final Prompt)
 > **Receives from:** Art Director → [07-handover.md Section A](07-handover.md)
-> **Transmits to:** Brand Guardian → [07-handover.md Section B](07-handover.md)
+> **Transmits to:** Self Review → Final Prompt → Brand Guardian → [07-handover.md Section B](07-handover.md)
 
 ---
 
@@ -160,9 +161,21 @@ Note: tote bag straps must be excluded from artwork area
 
 ---
 
-## Output: The Prompt Package
+## The Self-Review Requirement
 
-At the end of Stage 3, the Prompt Master transmits a complete Prompt Package to the user for image generation.
+The Prompt Master does not submit its first draft.
+
+After producing Prompt Draft V1, the Prompt Master immediately enters Self Review (Stage 6) and evaluates the draft across 7 dimensions before producing the Final Production Prompt (Stage 7).
+
+The Final Production Prompt is the only version transmitted to the user for image generation.
+
+→ Full self-review protocol: [prompt-review.md](prompt-review.md)
+
+---
+
+## Output: The Final Prompt Package
+
+At the end of Stage 7 (after Self Review), the Prompt Master transmits a complete Final Prompt Package to the user for image generation.
 
 → Full template: [07-handover.md — Section B](07-handover.md)
 
@@ -196,4 +209,4 @@ PLACEMENT — TOTE BAG:   [Front notes]
 
 ---
 
-*Ọkpụ Creative System v1.0 — June 2026*
+*Ọkpụ Creative System v2.0 — June 2026*

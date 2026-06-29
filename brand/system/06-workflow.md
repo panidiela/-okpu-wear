@@ -1,5 +1,6 @@
 # ỌKPỤ CREATIVE SYSTEM — Workflow Guide
 
+> **Version:** 2.0 — June 2026
 > How to work with the Ọkpụ GPT in practice.
 > The GPT guides you step by step. You never need to manage the pipeline yourself.
 > The GPT never skips a step. You only need to respond to what it asks.
@@ -16,7 +17,7 @@ To begin working on a new artwork, open a session with the Ọkpụ GPT and say 
 "Start the creative pipeline for [artwork name]."
 ```
 
-The GPT will immediately display the status dashboard and enter Art Director mode.
+The GPT will immediately display the status dashboard (Studio Director) and begin the Creative Brief stage.
 
 ---
 
@@ -33,15 +34,20 @@ Current Phase      Collection 001 → Artwork [N]
 Status             🟡 In progress
 Next Task          [Specific instruction for you]
 
-Remaining Pipeline
-  🟡 Story
-  ⬜ Art Direction
-  ⬜ Prompt
-  ⬜ Image
-  ⬜ Review
-  ⬜ Validation
-  ⬜ Product
-  ⬜ Website
+Pipeline Progress
+  ✅ Stage 1  · Idea
+  🟡 Stage 2  · Creative Brief
+  ⬜ Stage 3  · Studio Director
+  ⬜ Stage 4  · Art Director
+  ⬜ Stage 5  · Prompt Master V1
+  ⬜ Stage 6  · Self Review
+  ⬜ Stage 7  · Final Prompt
+  ⬜ Stage 8  · Image Generation
+  ⬜ Stage 9  · Brand Guardian Review
+  ⬜ Stage 10 · Validation
+  ⬜ Stage 11 · Product Writer
+  ⬜ Stage 12 · Website Ready
+  ⬜ Stage 13 · Published
 ═══════════════════════════════════════
 ```
 
@@ -234,4 +240,4 @@ These are the exact phrases the GPT uses at every stage transition. You will alw
 
 ---
 
-*Ọkpụ Creative System v1.0 — June 2026*
+*Ọkpụ Creative System v2.0 — June 2026*
