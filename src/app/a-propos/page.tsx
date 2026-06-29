@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { Heading } from "@/components/ui/Heading";
@@ -23,7 +24,15 @@ export default function AboutPage() {
           }}
           aria-hidden
         />
-        <div className="relative z-10">
+        <div className="relative z-10 flex flex-col items-center">
+          <Image
+            src="/logo/icon.png"
+            alt=""
+            width={64}
+            height={64}
+            aria-hidden
+            className="w-12 h-12 md:w-16 md:h-16 mb-6 opacity-90"
+          />
           <Heading as="h1" eyebrow="La marque">
             <span className="text-[#F7F4EE]">Notre histoire</span>
           </Heading>
@@ -42,19 +51,35 @@ export default function AboutPage() {
             </p>
 
             <p>
-              Cette idée est au cœur de notre marque.
+              Depuis des siècles, le sculpteur occupe une place singulière dans de nombreuses cultures africaines.
+              Il ne se contente pas de façonner le bois, la pierre ou le bronze. Il donne une forme visible aux
+              croyances, aux émotions, aux récits et à la mémoire d&apos;un peuple. Chaque œuvre devient un
+              témoignage transmis d&apos;une génération à l&apos;autre.
             </p>
 
             <p>
-              Comme le sculpteur façonne le bois ou la pierre, nous façonnons des histoires, des émotions
-              et des fragments de la culture africaine pour leur donner une nouvelle vie à travers l&apos;art
-              contemporain.
+              C&apos;est cette vision qui inspire <strong className="text-[#0B0B0B] font-semibold">Ọkpụ</strong>.
             </p>
 
             <p>
-              Chaque création est pensée comme une œuvre à part entière. Inspirée par les traditions, les
-              visages, les savoir-faire et les scènes de vie du continent africain, elle est réinterprétée
-              avec une sensibilité moderne afin de créer des pièces intemporelles.
+              Nous croyons que l&apos;art est l&apos;une des plus belles façons de raconter l&apos;Afrique. Une
+              Afrique riche de ses traditions, de ses peuples, de ses savoir-faire, de ses paysages et de ses
+              histoires. Une Afrique authentique, vivante et résolument tournée vers l&apos;avenir.
+            </p>
+
+            <p>
+              Nous ne cherchons pas à reproduire le passé.
+            </p>
+
+            <p>
+              Nous cherchons à lui donner une nouvelle voix.
+            </p>
+
+            <p>
+              Chaque création naît d&apos;une histoire. D&apos;un regard. D&apos;une émotion. D&apos;un instant
+              de vie. Inspirées du patrimoine culturel africain, nos œuvres sont réinterprétées avec une direction
+              artistique contemporaine afin de créer des pièces intemporelles qui traversent les modes et les
+              générations.
             </p>
 
             {/* Bloc 1 — manifeste */}
@@ -66,8 +91,20 @@ export default function AboutPage() {
             </p>
 
             <p>
-              Chaque illustration est réalisée avec exigence, produite en quantité limitée et imprimée
-              avec le plus grand soin afin de préserver sa qualité, son caractère et son authenticité.
+              Chaque illustration est conçue avec le même niveau d&apos;exigence qu&apos;une œuvre destinée à
+              être exposée dans une galerie. Le vêtement, l&apos;affiche ou la toile ne sont que des supports
+              permettant à l&apos;œuvre de vivre et d&apos;accompagner ceux qui la choisissent.
+            </p>
+
+            <p>
+              Notre ambition est de devenir l&apos;une des grandes références mondiales de l&apos;art africain
+              contemporain, en créant des œuvres qui traversent les frontières, les générations et les supports,
+              tout en restant fidèles à l&apos;âme du continent qui les inspire.
+            </p>
+
+            <p>
+              Nous privilégions toujours la qualité à la quantité. Chaque création est produite avec le plus
+              grand soin, en série limitée, afin de préserver son caractère, son authenticité et son émotion.
             </p>
 
             {/* Bloc 2 — porter */}

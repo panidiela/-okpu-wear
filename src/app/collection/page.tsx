@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { products, collections } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import { Section } from "@/components/ui/Section";
@@ -24,12 +25,20 @@ export default function CollectionPage() {
           }}
           aria-hidden
         />
-        <div className="relative z-10">
-          <Heading as="h1" eyebrow={`Collection 001 · ${products.length} œuvres`}>
+        <div className="relative z-10 flex flex-col items-center">
+          <Image
+            src="/logo/icon.png"
+            alt=""
+            width={64}
+            height={64}
+            aria-hidden
+            className="w-12 h-12 md:w-16 md:h-16 mb-6 opacity-90"
+          />
+          <Heading as="h1" eyebrow="Collection 001">
             <span className="text-[#F7F4EE]">ORIGINES</span>
           </Heading>
           <p className="mt-6 font-[family-name:var(--font-inter)] text-sm text-[#B7B2A9] max-w-sm mx-auto leading-relaxed">
-            Des pièces qui portent une histoire. Chaque création est une œuvre — portez-en le sens.
+            Des œuvres façonnées pour porter une histoire. Chaque pièce donne forme à un fragment d&apos;Afrique contemporaine.
           </p>
         </div>
       </section>
