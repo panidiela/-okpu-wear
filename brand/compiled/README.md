@@ -1,122 +1,93 @@
-# brand/compiled — GPT Build Output
+# Ọkpụ GPT — Compiled Files
 
-> These two files are the ready-to-use output for the Ọkpụ Custom GPT on ChatGPT.
-> They are compiled from the full `brand/` documentation.
-> Do not edit these files directly — edit the source docs and re-compile.
+> Version 2.0 — June 2026
 
----
+## Architecture
 
-## How to Set Up the GPT
-
-### Step 1 — Open ChatGPT and create a new Custom GPT
-
-Go to: chatgpt.com → Explore GPTs → Create → Configure
-
-Recommended model: GPT-4o with DALL-E generation enabled.
+| File | Size | Where it goes |
+|------|------|---------------|
+| `okpu-custom-gpt-instructions.md` | ~800 words | GPT → Instructions field (paste) |
+| `okpu-gpt-knowledge.md` | comprehensive | GPT → Knowledge (upload as file) |
+| `okpu-system-prompt.md` | complete reference | Not uploaded — documentation only |
 
 ---
 
-### Step 2 — Paste the Instructions file
+## Step 1 — GPT Instructions Field
 
-Open: `brand/compiled/okpu-custom-gpt-instructions.md`
+Open your ChatGPT custom GPT → Configure → Instructions.
 
-Copy the **entire contents** of the file and paste into the **Instructions** field of the Custom GPT.
+Paste the **entire contents** of `okpu-custom-gpt-instructions.md`.
 
-This file contains:
-- The 5 modes and their behavior
-- The 13-stage pipeline
-- The Studio Director dashboard format
-- Transition phrases
-- The 12 rules that never break
-- Session start behavior
-- The standard
+This file defines: GPT identity, personality, the five roles, pipeline overview, Knowledge requirement, and the 12 non-negotiable rules.
 
-**Do not add anything else to the Instructions field.** The full knowledge base is in the Knowledge file.
+It is intentionally short (~800 words). It does not contain scoring frameworks, field definitions, or output formats — those live in Knowledge.
 
 ---
 
-### Step 3 — Upload the Knowledge file
+## Step 2 — Knowledge Upload
 
-Open: `brand/compiled/okpu-gpt-knowledge.md`
+Upload `okpu-gpt-knowledge.md` as a Knowledge file.
 
-Upload this file in the **Knowledge** section of the Custom GPT configuration.
-
-This file contains:
-- Brand vision and identity
-- Color palette, typography, logo rules
-- Tone of voice with examples
-- Creative System v2.0 complete reference
-- Creative Brief (all 11 fields with full definitions)
-- Art Director role and handover format
-- Prompt Master role, DTF Lock block, self-review 7 dimensions
-- Brand Guardian role, scoring framework, gallery question, DTF checklist, critique format
-- Product Writer output list
-- Handover templates (A → B → C)
-- DTF print rules (complete)
+This file contains everything the GPT needs to execute each role:
+- Brand identity, palette, typography, tone of voice
+- 11 Creative Brief fields with full definitions
+- Studio Director dashboard format and transition phrases
+- Art Director output format
+- Prompt Master structure, DTF Lock Block, 7-dimension self-review
+- Brand Guardian 10-point scoring, 6-point DTF checklist, Gallery Question, critique format
+- Product Writer 15-item output list
+- Handover templates between roles
+- DTF print rules
 - Collections reference
 
 ---
 
-### Step 4 — Name and describe the GPT
+## Step 3 — GPT Name and Description
 
 **Name:** Ọkpụ Creative Studio
 
-**Description:** The official creative pipeline for Ọkpụ wearable art — from idea to published product. Operates as Studio Director, Creative Brief, Art Director, Prompt Master, Brand Guardian, and Product Writer.
+**Description:** *The official creative AI for Ọkpụ — African wearable art. Governs the full pipeline from concept to published product.*
 
 ---
 
-## How to Update the GPT After a Documentation Change
+## Updating the GPT
 
-When you modify any file in `brand/system/`, `brand/brand-guidelines.md`, `brand/tone-of-voice.md`, `brand/vision.md`, or `brand/collections.md`:
+### Quick update (one section changed)
 
-### Option A — Minimal update (section change)
+1. Edit the relevant Part in `okpu-gpt-knowledge.md`
+2. Update `okpu-system-prompt.md` to match (Section 2 or 4)
+3. Re-upload `okpu-gpt-knowledge.md` to Knowledge
+4. If the change is behavioral (a rule, not content): also update `okpu-custom-gpt-instructions.md` and re-paste it
 
-1. Identify which part of the knowledge base changed
-2. Edit the corresponding section in `brand/compiled/okpu-gpt-knowledge.md` directly
-3. If the change affects GPT behavior (pipeline, rules, scoring), also edit `brand/compiled/okpu-custom-gpt-instructions.md`
-4. Upload the updated file(s) to the GPT Knowledge section
-5. Commit: `docs: update compiled GPT files — [what changed]`
+### Full recompile (major changes)
 
-### Option B — Full recompile (major system change)
+Update all three files. Re-paste Instructions. Re-upload Knowledge.
 
-Run a full recompile when:
-- The pipeline changes significantly (new stages, new roles)
-- A new role is added or removed
-- The brand identity changes (color, name, positioning)
+### When the GPT ignores a Knowledge rule
 
-Steps:
-1. Read all source files in `brand/`
-2. Rewrite `brand/compiled/okpu-gpt-knowledge.md` from sources
-3. Rewrite `brand/compiled/okpu-custom-gpt-instructions.md` from `brand/system/chatgpt-modes.md`
-4. Replace the files in the GPT Knowledge section
-5. Re-paste the Instructions field
-6. Commit: `docs: recompile GPT files — v[N]`
+Move that rule into `okpu-custom-gpt-instructions.md`. Instructions take precedence over Knowledge in ChatGPT's behavior hierarchy.
 
 ---
 
-## File Map
+## File Map — What Lives Where
 
-| Compiled file | Source files |
-|--------------|-------------|
-| `okpu-custom-gpt-instructions.md` | `brand/system/chatgpt-modes.md` |
-| `okpu-gpt-knowledge.md` (Part 1) | `brand/vision.md` |
-| `okpu-gpt-knowledge.md` (Part 2) | `brand/brand-guidelines.md` |
-| `okpu-gpt-knowledge.md` (Part 3) | `brand/tone-of-voice.md` |
-| `okpu-gpt-knowledge.md` (Parts 4–9) | `brand/system/00-overview.md` · `00-creative-brief.md` · `02-role-art-director.md` · `03-role-prompt-master.md` · `prompt-review.md` · `04-role-brand-guardian.md` · `05-role-product-writer.md` |
-| `okpu-gpt-knowledge.md` (Part 10) | `brand/system/07-handover.md` |
-| `okpu-gpt-knowledge.md` (Part 11) | `brand/prompts/dtf-rules.md` |
-| `okpu-gpt-knowledge.md` (Part 12) | `brand/collections.md` · `src/data/products.ts` |
-
----
-
-## Notes
-
-- The Instructions file is intentionally short — GPT Instructions fields work best when focused on behavior, not content.
-- The Knowledge file handles all the "what" — descriptions, definitions, templates, rules.
-- The GPT reads Knowledge when it needs detail that isn't in Instructions.
-- If the GPT ever ignores a rule from Knowledge, move that rule into Instructions.
-- ChatGPT Knowledge has a file size limit. If `okpu-gpt-knowledge.md` grows too large, split it into `okpu-gpt-knowledge-01.md` and `okpu-gpt-knowledge-02.md` and upload both.
+| Content | Source file | Compiled into |
+|---------|------------|---------------|
+| GPT identity and personality | `system/00-overview.md` | Instructions + Knowledge Part 1 |
+| Pipeline (13 stages) | `system/01-creative-pipeline.md` | Instructions + Knowledge Part 4 |
+| Studio Director role | `system/00-role-studio-director.md` | Instructions + Knowledge Part 5 |
+| Creative Brief (11 fields) | `system/00-creative-brief.md` | Knowledge Part 6 |
+| Art Director role | `system/02-role-art-director.md` | Knowledge Part 7 |
+| Prompt Master + self-review | `system/03-role-prompt-master.md` + `system/prompt-review.md` | Knowledge Part 8 |
+| Brand Guardian + gallery Q | `system/04-role-brand-guardian.md` | Knowledge Part 9 |
+| Product Writer | `system/05-role-product-writer.md` | Knowledge Part 10 |
+| Handover templates | `system/07-handover.md` | Knowledge Parts 7, 8, 9 |
+| DTF print rules | `brand/prompts/dtf-rules.md` | Knowledge Part 11 |
+| Brand guidelines | `brand/brand-guidelines.md` | Knowledge Part 2 |
+| Tone of voice | `brand/tone-of-voice.md` | Knowledge Part 3 |
+| Collections | `brand/collections.md` | Knowledge Part 12 |
+| Complete technical reference | *(this system)* | `okpu-system-prompt.md` |
 
 ---
 
-*Last compiled: June 2026 — Ọkpụ Creative System v2.0*
+*Ọkpụ Creative System v2.0 — compiled June 2026*
