@@ -27,7 +27,8 @@ export default function CollectionPage() {
         />
         <div className="relative z-10 flex flex-col items-center">
           <Image
-            src="/logo/icon.png"
+            src="/logo/icon.svg"
+            unoptimized
             alt=""
             width={64}
             height={64}
