@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="py-16 md:py-20 grid grid-cols-1 md:grid-cols-3 gap-12">
 
           {/* Colonne marque */}
-          <div className="md:col-span-1">
+          <div>
             <Link
               href="/"
               className="font-[family-name:var(--font-cormorant)] text-3xl text-[#F7F4EE] font-light tracking-[0.08em] hover:text-[#C9A45C] transition-colors duration-300"
@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation */}
-          <div className="md:col-span-1">
+          <div>
             <p className="text-xs uppercase tracking-[0.2em] text-[#B7B2A9] mb-6 font-[family-name:var(--font-inter)]">
               Navigation
             </p>
@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
 
           {/* Commander */}
-          <div className="md:col-span-1">
+          <div>
             <p className="text-xs uppercase tracking-[0.2em] text-[#B7B2A9] mb-6 font-[family-name:var(--font-inter)]">
               Commander
             </p>

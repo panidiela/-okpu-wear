@@ -30,11 +30,20 @@ export default function AboutPage() {
             width={64}
             height={64}
             aria-hidden
-            className="w-12 h-12 md:w-16 md:h-16 mb-6 opacity-90"
+            className="w-[60px] h-[60px] md:w-20 md:h-20 mb-6 opacity-90"
           />
           <Heading as="h1" eyebrow="La marque">
             <span className="text-[#F7F4EE]">Notre histoire</span>
           </Heading>
+          <Image
+            src="/logo/motifokpu.svg"
+            unoptimized
+            alt=""
+            aria-hidden
+            width={80}
+            height={80}
+            className="mt-8 mb-6 mx-auto w-[110px] md:w-[130px] h-auto opacity-60"
+          />
         </div>
       </section>
 

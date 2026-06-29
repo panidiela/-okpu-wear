@@ -16,9 +16,9 @@ export default function Navbar() {
           <Image
             src="/logo/logo-header.svg"
             alt="Ọkpụ"
-            width={120}
-            height={40}
-            className="h-9 md:h-10 w-auto"
+            width={168}
+            height={56}
+            className="h-[46px] md:h-14 w-auto"
             priority
           />
         </Link>

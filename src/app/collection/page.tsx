@@ -14,7 +14,7 @@ export default function CollectionPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#0B0B0B] text-[#F7F4EE] py-20 md:py-28 text-center relative overflow-hidden">
+      <section className="bg-[#0B0B0B] text-[#F7F4EE] py-12 md:py-20 text-center relative overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -33,7 +33,7 @@ export default function CollectionPage() {
             width={64}
             height={64}
             aria-hidden
-            className="w-12 h-12 md:w-16 md:h-16 mb-6 opacity-90"
+            className="w-[60px] h-[60px] md:w-20 md:h-20 mb-6 opacity-90"
           />
           <Heading as="h1" eyebrow="Collection 001">
             <span className="text-[#F7F4EE]">ORIGINES</span>
@@ -41,6 +41,15 @@ export default function CollectionPage() {
           <p className="mt-6 font-[family-name:var(--font-inter)] text-sm text-[#B7B2A9] max-w-sm mx-auto leading-relaxed">
             Des œuvres façonnées pour porter une histoire. Chaque pièce donne forme à un fragment d&apos;Afrique contemporaine.
           </p>
+          <Image
+            src="/logo/motifokpu.svg"
+            unoptimized
+            alt=""
+            aria-hidden
+            width={80}
+            height={80}
+            className="mt-8 mb-6 mx-auto w-[110px] md:w-[130px] h-auto opacity-60"
+          />
         </div>
       </section>
 
