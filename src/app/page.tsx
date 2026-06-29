@@ -41,7 +41,7 @@ export default function HomePage() {
             priority
           />
           <p className="font-[family-name:var(--font-inter)] text-[#B7B2A9] text-sm leading-relaxed max-w-xs">
-            Dix œuvres portables.<br />
+            Des œuvres portables.<br />
             Chacune raconte quelque chose que les mots ne suffisent pas à dire.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 mt-4">
