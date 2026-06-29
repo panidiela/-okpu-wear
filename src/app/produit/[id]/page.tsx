@@ -25,7 +25,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
   const product = getProductById(id);
   if (!product) notFound();
 
-  const waLink = `https://wa.me/22901000000?text=${encodeURIComponent(product.whatsappMessage)}`;
+  const waLink = `https://wa.me/237657767577?text=${encodeURIComponent(product.whatsappMessage)}`;
 
   return (
     <div className="min-h-screen bg-[#F7F4EE]">

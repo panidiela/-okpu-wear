@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { Heading } from "@/components/ui/Heading";
 import { ButtonLink } from "@/components/ui/Button";
 
-const WHATSAPP_NUMBER = "22901000000";
+const WHATSAPP_NUMBER = "237657767577";
 
 export default function HomePage() {
   const featured = products.slice(0, 4);

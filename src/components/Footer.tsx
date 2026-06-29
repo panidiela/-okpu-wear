@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const WHATSAPP_NUMBER = "22901000000";
+const WHATSAPP_NUMBER = "237657767577";
 
 export default function Footer() {
   return (
@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8">
 
         {/* Top */}
-        <div className="py-16 md:py-20 grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="py-16 md:py-20 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_1fr] gap-12">
 
           {/* Colonne marque */}
           <div>
@@ -51,8 +51,18 @@ export default function Footer() {
             </p>
           </div>
 
+          {/* Motif décoratif — visible desktop uniquement */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <div className="hidden md:flex items-center justify-center md:pl-10" aria-hidden>
+            <img
+              src="/logo/motifokpu2.svg"
+              alt=""
+              className="w-auto h-24 opacity-20 pointer-events-none select-none"
+            />
+          </div>
+
           {/* Navigation */}
-          <div>
+          <div className="md:pl-[130px]">
             <p className="text-xs uppercase tracking-[0.2em] text-[#B7B2A9] mb-6 font-[family-name:var(--font-inter)]">
               Navigation
             </p>

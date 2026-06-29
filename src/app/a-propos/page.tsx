@@ -180,7 +180,7 @@ export default function AboutPage() {
               Toutes les commandes se font directement via WhatsApp. Clique ci-dessous pour nous contacter.
             </p>
             <ButtonLink
-              href="https://wa.me/22901000000"
+              href="https://wa.me/237657767577"
               target="_blank"
               rel="noopener noreferrer"
               variant="primary"
