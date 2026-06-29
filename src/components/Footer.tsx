@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const WHATSAPP_NUMBER = "22901000000";
@@ -38,18 +37,16 @@ export default function Footer() {
         {/* Top */}
         <div className="py-16 md:py-20 grid grid-cols-1 md:grid-cols-3 gap-12">
 
-          {/* Colonne logo */}
+          {/* Colonne marque */}
           <div className="md:col-span-1">
-            <Link href="/">
-              <Image
-                src="/logo/logo-header-gold.svg"
-                alt="Ọkpụ"
-                width={180}
-                height={70}
-                className="h-14 w-auto"
-              />
+            <Link
+              href="/"
+              className="font-[family-name:var(--font-cormorant)] text-3xl text-[#F7F4EE] font-light tracking-[0.08em] hover:text-[#C9A45C] transition-colors duration-300"
+              aria-label="Ọkpụ Wear — retour à l'accueil"
+            >
+              Ọkpụ
             </Link>
-            <p className="mt-2 text-[#B7B2A9] text-sm leading-relaxed max-w-xs font-[family-name:var(--font-inter)]">
+            <p className="mt-3 text-[#B7B2A9] text-sm leading-relaxed max-w-xs font-[family-name:var(--font-inter)]">
               Art africain contemporain. Des œuvres pensées avec exigence, imprimées avec soin.
             </p>
           </div>
