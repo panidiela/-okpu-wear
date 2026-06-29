@@ -20,9 +20,9 @@ export const products: Product[] = [
     price: 29,
     currency: "€",
     description:
-      "Un bonnet qui porte la mémoire. Inspiré des gardiens invisibles qui veillent sur les récits ancestraux.",
+      "Une création qui porte la mémoire. Inspirée des gardiens invisibles qui veillent sur les récits ancestraux.",
     shortStory:
-      "Il garde ce que le temps essaie d'effacer. Porter ce bonnet, c'est choisir de ne pas oublier.",
+      "Il garde ce que le temps essaie d'effacer. Porter cette création, c'est choisir de ne pas oublier.",
     images: ["/products/gardien-des-origines.jpg"],
     sizes: ["S", "M", "L", "XL", "XXL"],
     available: true,

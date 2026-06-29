@@ -95,7 +95,7 @@ export default function HomePage() {
             </Heading>
             <p className="mt-6 text-[#B7B2A9] font-[family-name:var(--font-inter)] text-sm leading-relaxed">
               Ọkpụ crée des pièces qui portent une histoire, une intention, une mémoire.
-              Chaque bonnet de la collection ORIGINES est pensé comme une œuvre d&apos;art portée —
+              Chaque création de la collection ORIGINES est pensée comme une œuvre d&apos;art portée —
               ancrée dans le patrimoine africain, faite pour aujourd&apos;hui.
             </p>
             <div className="mt-10">

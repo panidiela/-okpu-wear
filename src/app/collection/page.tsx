@@ -29,7 +29,7 @@ export default function CollectionPage() {
             <span className="text-[#F7F4EE]">ORIGINES</span>
           </Heading>
           <p className="mt-6 font-[family-name:var(--font-inter)] text-sm text-[#B7B2A9] max-w-sm mx-auto leading-relaxed">
-            Des pièces qui portent une histoire. Chaque bonnet est une œuvre — portez-en le sens.
+            Des pièces qui portent une histoire. Chaque création est une œuvre — portez-en le sens.
           </p>
         </div>
       </section>

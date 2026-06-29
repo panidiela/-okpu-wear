@@ -35,9 +35,9 @@ export default function AboutPage() {
         <Container narrow>
           <div className="space-y-8 font-[family-name:var(--font-inter)] text-sm text-[#B7B2A9] leading-relaxed">
             <p>
-              <span className="font-[family-name:var(--font-cormorant)] text-[#0B0B0B] text-xl not-italic">Ọkpụ</span>
+              <strong className="text-[#0B0B0B] font-semibold">Ọkpụ</strong>
               {" "}— prononcé <em>Okpu</em> — est inspiré d&apos;un mot de la langue igbo évoquant{" "}
-              <span className="font-[family-name:var(--font-cormorant)] text-[#0B0B0B] text-lg italic">le sculpteur</span>,
+              <strong className="text-[#0B0B0B] font-semibold">le sculpteur</strong>,
               celui qui révèle une œuvre en donnant forme à la matière.
             </p>
 
@@ -57,9 +57,12 @@ export default function AboutPage() {
               avec une sensibilité moderne afin de créer des pièces intemporelles.
             </p>
 
-            <p className="font-[family-name:var(--font-cormorant)] text-[#0B0B0B] text-xl leading-snug">
-              Nous ne créons pas simplement des vêtements.<br />
-              Nous créons des œuvres que l&apos;on porte.
+            {/* Bloc 1 — manifeste */}
+            <p className="text-base md:text-lg text-[#0B0B0B] leading-snug font-medium">
+              Chez <strong>Ọkpụ</strong>, nous ne créons pas simplement des vêtements.<br />
+              Nous créons des œuvres que l&apos;on porte.<br />
+              Le textile n&apos;est pas notre métier.<br />
+              L&apos;art est notre métier.
             </p>
 
             <p>
@@ -67,11 +70,12 @@ export default function AboutPage() {
               avec le plus grand soin afin de préserver sa qualité, son caractère et son authenticité.
             </p>
 
-            <p>
-              Porter une création{" "}
-              <span className="font-[family-name:var(--font-cormorant)] text-[#0B0B0B] text-base not-italic">Ọkpụ</span>,
-              c&apos;est porter une histoire, célébrer une culture et faire vivre un fragment de l&apos;Afrique
-              contemporaine.
+            {/* Bloc 2 — porter */}
+            <p className="text-base md:text-lg text-[#0B0B0B] leading-snug font-medium">
+              Porter une création <strong>Ọkpụ</strong>, c&apos;est bien plus que porter un objet.<br />
+              C&apos;est porter une histoire.<br />
+              C&apos;est célébrer une culture.<br />
+              C&apos;est faire vivre un fragment de l&apos;Afrique contemporaine.
             </p>
           </div>
 
