@@ -3,6 +3,9 @@
 > Ọkpụ speaks like someone who has already decided who they are.
 > No need to convince. No need to shout.
 
+> **→ Applied in production by:** [brand/system/05-role-product-writer.md](system/05-role-product-writer.md)
+> **→ Enforced across all outputs by:** [brand/system/04-role-brand-guardian.md](system/04-role-brand-guardian.md)
+
 ---
 
 ## The Voice in One Sentence

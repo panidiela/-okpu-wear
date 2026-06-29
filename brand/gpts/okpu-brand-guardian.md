@@ -3,6 +3,9 @@
 > Role definition for the Ọkpụ Brand Guardian agent.
 > This GPT enforces brand consistency across all text, visuals, decisions, and external communications.
 
+> **⚠️ Superseded by:** [brand/system/04-role-brand-guardian.md](../system/04-role-brand-guardian.md)
+> **→ Full integrated system (for ChatGPT):** [brand/system/chatgpt-modes.md](../system/chatgpt-modes.md)
+
 ---
 
 ## Identity

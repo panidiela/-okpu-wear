@@ -3,6 +3,9 @@
 > The visual and creative rules that define how Ọkpụ looks, feels, and communicates.
 > Every decision should pass this test: *does this feel like a gallery, or does it feel like a store?*
 
+> **→ Creative production system:** [brand/system/00-overview.md](system/00-overview.md)
+> **→ How these guidelines are enforced:** [brand/system/04-role-brand-guardian.md](system/04-role-brand-guardian.md)
+
 ---
 
 ## 1. Color Palette

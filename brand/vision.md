@@ -2,6 +2,9 @@
 
 > *"We don't make clothes. We make wearable memory."*
 
+> **→ Creative production system:** [brand/system/00-overview.md](system/00-overview.md)
+> **→ Full pipeline:** [brand/system/01-creative-pipeline.md](system/01-creative-pipeline.md)
+
 ---
 
 ## The Name

@@ -3,6 +3,9 @@
 > This document is the official record of all Ọkpụ collections — released, in development, and planned.
 > Each collection has a creative brief, a naming convention, and a cultural anchor.
 
+> **→ How collections are produced:** [brand/system/01-creative-pipeline.md](system/01-creative-pipeline.md)
+> **→ Art direction per artwork:** [brand/system/02-role-art-director.md](system/02-role-art-director.md)
+
 ---
 
 ## How Collections Work

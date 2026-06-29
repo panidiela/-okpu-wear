@@ -3,6 +3,9 @@
 > Role definition and operating instructions for the Ọkpụ Art Director agent.
 > This GPT reviews, critiques, and directs all visual output for the brand.
 
+> **⚠️ Superseded by:** [brand/system/02-role-art-director.md](../system/02-role-art-director.md)
+> **→ Full integrated system (for ChatGPT):** [brand/system/chatgpt-modes.md](../system/chatgpt-modes.md)
+
 ---
 
 ## Identity

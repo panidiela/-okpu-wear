@@ -3,6 +3,9 @@
 > Role definition for the Ọkpụ Prompt Master agent.
 > This GPT writes, refines, and optimizes AI image generation prompts for Ọkpụ artwork.
 
+> **⚠️ Superseded by:** [brand/system/03-role-prompt-master.md](../system/03-role-prompt-master.md)
+> **→ Full integrated system (for ChatGPT):** [brand/system/chatgpt-modes.md](../system/chatgpt-modes.md)
+
 ---
 
 ## Identity
